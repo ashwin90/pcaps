@@ -1,0 +1,816 @@
+  1   0.000000 192.168.42.196 -> 207.46.232.182 TCP 74 47668 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43486991 TSecr=0 WS=128  tcp.stream == 0
+  2   0.246327 192.168.42.196 -> 207.46.232.182 TCP 74 47669 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43487052 TSecr=0 WS=128  tcp.stream == 1
+  3   1.856984 207.46.232.182 -> 192.168.42.196 TCP 66 http > 47668 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 0
+  4   1.857012 192.168.42.196 -> 207.46.232.182 TCP 54 47668 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 0
+  5   1.861155 192.168.42.196 -> 207.46.232.182 HTTP 453 GET / HTTP/1.1   tcp.stream == 0
+  6   1.997172 207.46.232.182 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 47668 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 0
+  7   1.997187 207.46.232.182 -> 192.168.42.196 TCP 66 http > 47669 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 1
+  8   1.997198 192.168.42.196 -> 207.46.232.182 TCP 54 47669 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 1
+  9   2.066916 207.46.232.182 -> 192.168.42.196 HTTP 502 HTTP/1.1 301 Moved Permanently  (text/html)  tcp.stream == 0
+ 10   2.066936 192.168.42.196 -> 207.46.232.182 TCP 54 47668 > http [ACK] Seq=400 Ack=449 Win=15744 Len=0  tcp.stream == 0
+ 11   2.078008 192.168.42.196 -> 207.46.232.182 TCP 54 47668 > http [FIN, ACK] Seq=400 Ack=449 Win=15744 Len=0  tcp.stream == 0
+ 13   2.106444 207.46.232.182 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 47669 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 1
+ 14   2.187063 207.46.232.182 -> 192.168.42.196 TCP 54 http > 47668 [ACK] Seq=449 Ack=401 Win=200000 Len=0  tcp.stream == 0
+ 15   2.187082 207.46.232.182 -> 192.168.42.196 TCP 54 http > 47668 [FIN, ACK] Seq=449 Ack=401 Win=200000 Len=0  tcp.stream == 0
+ 16   2.187091 192.168.42.196 -> 207.46.232.182 TCP 54 47668 > http [ACK] Seq=401 Ack=450 Win=15744 Len=0  tcp.stream == 0
+ 22   2.700373 192.168.42.196 -> 65.55.12.249 TCP 74 54539 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43487666 TSecr=0 WS=128  tcp.stream == 2
+ 23   2.816796 65.55.12.249 -> 192.168.42.196 TCP 66 http > 54539 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 2
+ 24   2.816830 192.168.42.196 -> 65.55.12.249 TCP 54 54539 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 2
+ 25   2.818746 192.168.42.196 -> 65.55.12.249 HTTP 457 GET / HTTP/1.1   tcp.stream == 2
+ 26   2.937318 65.55.12.249 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 54539 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 2
+ 27   3.036650 65.55.12.249 -> 192.168.42.196 HTTP 618 HTTP/1.1 302 Found  (text/html)  tcp.stream == 2
+ 28   3.036669 192.168.42.196 -> 65.55.12.249 TCP 54 54539 > http [ACK] Seq=404 Ack=565 Win=15744 Len=0  tcp.stream == 2
+ 29   3.043842 192.168.42.196 -> 65.55.12.249 TCP 54 54539 > http [FIN, ACK] Seq=404 Ack=565 Win=15744 Len=0  tcp.stream == 2
+ 30   3.055181 192.168.42.196 -> 65.55.186.235 TCP 74 45629 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43487755 TSecr=0 WS=128  tcp.stream == 3
+ 31   3.156941 65.55.12.249 -> 192.168.42.196 TCP 54 http > 54539 [ACK] Seq=565 Ack=405 Win=200000 Len=0  tcp.stream == 2
+ 32   3.156962 65.55.12.249 -> 192.168.42.196 TCP 54 http > 54539 [FIN, ACK] Seq=565 Ack=405 Win=200000 Len=0  tcp.stream == 2
+ 33   3.156968 192.168.42.196 -> 65.55.12.249 TCP 54 54539 > http [ACK] Seq=405 Ack=566 Win=15744 Len=0  tcp.stream == 2
+ 34   3.166652 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45629 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 3
+ 35   3.166681 192.168.42.196 -> 65.55.186.235 TCP 54 45629 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 3
+ 36   3.168697 192.168.42.196 -> 65.55.186.235 HTTP 460 GET / HTTP/1.1   tcp.stream == 3
+ 37   3.277918 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45629 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 3
+ 38   3.406805 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45629 [ACK] Seq=1 Ack=407 Win=200000 Len=0  tcp.stream == 3
+ 39   3.436905 65.55.186.235 -> 192.168.42.196 HTTP 530 HTTP/1.1 301 Moved Permanently  (text/html)  tcp.stream == 3
+ 40   3.436923 192.168.42.196 -> 65.55.186.235 TCP 54 45629 > http [ACK] Seq=407 Ack=477 Win=15744 Len=0  tcp.stream == 3
+ 41   3.444006 192.168.42.196 -> 65.55.186.235 TCP 54 45629 > http [FIN, ACK] Seq=407 Ack=477 Win=15744 Len=0  tcp.stream == 3
+ 42   3.454169 192.168.42.196 -> 65.55.186.235 TCP 74 45630 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43487854 TSecr=0 WS=128  tcp.stream == 4
+ 43   3.556933 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45629 [ACK] Seq=477 Ack=408 Win=200000 Len=0  tcp.stream == 3
+ 44   3.556953 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45629 [FIN, ACK] Seq=477 Ack=408 Win=200000 Len=0  tcp.stream == 3
+ 45   3.556960 192.168.42.196 -> 65.55.186.235 TCP 54 45629 > http [ACK] Seq=408 Ack=478 Win=15744 Len=0  tcp.stream == 3
+ 46   3.566793 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45630 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 4
+ 47   3.566814 192.168.42.196 -> 65.55.186.235 TCP 54 45630 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 4
+ 48   3.568447 192.168.42.196 -> 65.55.186.235 HTTP 455 GET / HTTP/1.1   tcp.stream == 4
+ 49   3.677784 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45630 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 4
+ 50   3.806936 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45630 [ACK] Seq=1 Ack=402 Win=200000 Len=0  tcp.stream == 4
+ 51   3.876780 65.55.186.235 -> 192.168.42.196 HTTP 832 HTTP/1.1 302 Found  (text/html)  tcp.stream == 4
+ 52   3.876800 192.168.42.196 -> 65.55.186.235 TCP 54 45630 > http [ACK] Seq=402 Ack=779 Win=16256 Len=0  tcp.stream == 4
+ 53   3.885753 192.168.42.196 -> 65.55.186.235 TCP 54 45630 > http [FIN, ACK] Seq=402 Ack=779 Win=16256 Len=0  tcp.stream == 4
+ 54   3.889578 192.168.42.196 -> 65.55.186.235 TCP 74 45631 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43487963 TSecr=0 WS=128  tcp.stream == 5
+ 55   3.996809 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45630 [ACK] Seq=779 Ack=403 Win=200000 Len=0  tcp.stream == 4
+ 56   3.996828 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45630 [FIN, ACK] Seq=779 Ack=403 Win=200000 Len=0  tcp.stream == 4
+ 57   3.996837 192.168.42.196 -> 65.55.186.235 TCP 54 45630 > http [ACK] Seq=403 Ack=780 Win=16256 Len=0  tcp.stream == 4
+ 58   4.006600 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45631 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 5
+ 59   4.006623 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 5
+ 60   4.008280 192.168.42.196 -> 65.55.186.235 HTTP 473 GET /en-us/default.mspx HTTP/1.1   tcp.stream == 5
+ 61   4.116777 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45631 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 5
+ 62   4.256801 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45631 [ACK] Seq=1 Ack=420 Win=200000 Len=0  tcp.stream == 5
+ 63   6.367437 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 5
+ 64   6.367453 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=420 Ack=1261 Win=17152 Len=0  tcp.stream == 5
+ 65   6.377259 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 5
+ 66   6.377279 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=420 Ack=2521 Win=19712 Len=0  tcp.stream == 5
+ 67   6.377370 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 5
+ 68   6.377376 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=420 Ack=3781 Win=22272 Len=0  tcp.stream == 5
+ 69   6.387257 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 5
+ 70   6.387277 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=420 Ack=5041 Win=24704 Len=0  tcp.stream == 5
+ 71   6.398136 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 5
+ 72   6.398157 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=420 Ack=6301 Win=27264 Len=0  tcp.stream == 5
+ 73   6.398164 65.55.186.235 -> 192.168.42.196 HTTP/XML 744 HTTP/1.1 200 OK   tcp.stream == 5
+ 74   6.398166 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=420 Ack=6991 Win=29824 Len=0  tcp.stream == 5
+ 75   6.406687 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [FIN, ACK] Seq=420 Ack=6991 Win=29824 Len=0  tcp.stream == 5
+ 76   6.526765 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45631 [ACK] Seq=6991 Ack=421 Win=200000 Len=0  tcp.stream == 5
+ 77   6.526783 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45631 [FIN, ACK] Seq=6991 Ack=421 Win=200000 Len=0  tcp.stream == 5
+ 78   6.526790 192.168.42.196 -> 65.55.186.235 TCP 54 45631 > http [ACK] Seq=421 Ack=6992 Win=29824 Len=0  tcp.stream == 5
+ 79   6.640500 192.168.42.196 -> 65.55.186.235 TCP 74 45632 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488651 TSecr=0 WS=128  tcp.stream == 6
+ 81   6.651594 192.168.42.196 -> 65.55.186.235 TCP 74 45633 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488654 TSecr=0 WS=128  tcp.stream == 7
+ 82   6.660632 192.168.42.196 -> 65.55.186.235 TCP 74 45634 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488656 TSecr=0 WS=128  tcp.stream == 8
+ 83   6.683527 192.168.42.196 -> 65.55.186.235 TCP 74 45635 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488662 TSecr=0 WS=128  tcp.stream == 9
+ 84   6.695752 192.168.42.196 -> 65.55.186.235 TCP 74 45636 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488665 TSecr=0 WS=128  tcp.stream == 10
+ 85   6.707085 192.168.42.196 -> 65.55.186.235 TCP 74 45637 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488668 TSecr=0 WS=128  tcp.stream == 11
+ 86   6.757413 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45632 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 6
+ 87   6.757441 192.168.42.196 -> 65.55.186.235 TCP 54 45632 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 6
+ 88   6.759300 192.168.42.196 -> 65.55.186.235 HTTP 529 GET /Library/js/im/gmr-1.6.0/jQuery.moveTo.js HTTP/1.1   tcp.stream == 6
+ 89   6.766774 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45633 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 7
+ 90   6.766797 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 7
+ 91   6.768587 192.168.42.196 -> 65.55.186.235 HTTP 549 GET /Library/js/im/gmr-1.6.0/jquerytools/scrollable/scrollable.js HTTP/1.1   tcp.stream == 7
+ 92   6.778276 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45634 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 8
+ 93   6.778298 192.168.42.196 -> 65.55.186.235 TCP 54 45634 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 8
+ 94   6.779892 192.168.42.196 -> 65.55.186.235 HTTP 559 GET /Library/js/im/gmr-1.6.0/jquerytools/scrollable/scrollable.navigator.js HTTP/1.1   tcp.stream == 8
+ 95   6.797287 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45635 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 9
+ 96   6.797314 192.168.42.196 -> 65.55.186.235 TCP 54 45635 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 9
+ 97   6.798951 192.168.42.196 -> 65.55.186.235 HTTP 560 GET /Library/js/im/gmr-1.6.0/jquerytools/scrollable/scrollable.pagenumber.js HTTP/1.1   tcp.stream == 9
+ 98   6.806902 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45636 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 10
+ 99   6.806926 192.168.42.196 -> 65.55.186.235 TCP 54 45636 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 10
+100   6.808458 192.168.42.196 -> 65.55.186.235 HTTP 543 GET /Library/js/im/gmr-1.6.0/touchClicker_iphone_android.js HTTP/1.1   tcp.stream == 10
+101   6.817151 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45637 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 11
+102   6.817175 192.168.42.196 -> 65.55.186.235 TCP 54 45637 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 11
+103   6.819429 192.168.42.196 -> 65.55.186.235 HTTP 526 GET /Library/js/im/gmr-1.6.0/turnscreen.js HTTP/1.1   tcp.stream == 11
+106   6.876664 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45632 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 6
+107   6.898404 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45633 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 7
+108   6.936787 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45634 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 8
+109   6.946783 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45635 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 9
+110   6.946796 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45636 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 10
+111   6.956645 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45637 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 11
+112   7.006638 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45632 [ACK] Seq=1 Ack=476 Win=200000 Len=0  tcp.stream == 6
+113   7.026900 65.55.186.235 -> 192.168.42.196 HTTP 1097 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 6
+114   7.026916 192.168.42.196 -> 65.55.186.235 TCP 54 45632 > http [ACK] Seq=476 Ack=1044 Win=16768 Len=0  tcp.stream == 6
+115   7.034039 192.168.42.196 -> 65.55.186.235 TCP 54 45632 > http [FIN, ACK] Seq=476 Ack=1044 Win=16768 Len=0  tcp.stream == 6
+116   7.035216 192.168.42.196 -> 65.55.186.235 TCP 74 45638 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488750 TSecr=0 WS=128  tcp.stream == 12
+117   7.056905 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45634 [ACK] Seq=1 Ack=506 Win=200000 Len=0  tcp.stream == 8
+118   7.056920 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45635 [ACK] Seq=1 Ack=507 Win=200000 Len=0  tcp.stream == 9
+119   7.056922 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45633 [ACK] Seq=1 Ack=496 Win=200000 Len=0  tcp.stream == 7
+122   7.077007 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 8
+123   7.077027 192.168.42.196 -> 65.55.186.235 TCP 54 45634 > http [ACK] Seq=506 Ack=1261 Win=17152 Len=0  tcp.stream == 8
+124   7.077033 65.55.186.235 -> 192.168.42.196 HTTP 432 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 8
+125   7.077036 192.168.42.196 -> 65.55.186.235 TCP 54 45634 > http [ACK] Seq=506 Ack=1639 Win=19712 Len=0  tcp.stream == 8
+126   7.083793 192.168.42.196 -> 65.55.186.235 TCP 54 45634 > http [FIN, ACK] Seq=506 Ack=1639 Win=19712 Len=0  tcp.stream == 8
+127   7.084766 192.168.42.196 -> 65.55.186.235 TCP 74 45639 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488762 TSecr=0 WS=128  tcp.stream == 13
+128   7.087004 65.55.186.235 -> 192.168.42.196 HTTP 928 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 9
+129   7.087025 192.168.42.196 -> 65.55.186.235 TCP 54 45635 > http [ACK] Seq=507 Ack=875 Win=16384 Len=0  tcp.stream == 9
+130   7.096635 192.168.42.196 -> 65.55.186.235 TCP 54 45635 > http [FIN, ACK] Seq=507 Ack=875 Win=16384 Len=0  tcp.stream == 9
+131   7.097000 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 10
+132   7.097021 192.168.42.196 -> 65.55.186.235 TCP 54 45636 > http [ACK] Seq=490 Ack=1261 Win=17152 Len=0  tcp.stream == 10
+133   7.097026 65.55.186.235 -> 192.168.42.196 HTTP 122 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 10
+134   7.097029 192.168.42.196 -> 65.55.186.235 TCP 54 45636 > http [ACK] Seq=490 Ack=1329 Win=17152 Len=0  tcp.stream == 10
+135   7.097569 192.168.42.196 -> 65.55.186.235 TCP 74 45640 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488765 TSecr=0 WS=128  tcp.stream == 14
+136   7.108355 192.168.42.196 -> 65.55.186.235 TCP 54 45636 > http [FIN, ACK] Seq=490 Ack=1329 Win=17152 Len=0  tcp.stream == 10
+137   7.108619 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45637 [ACK] Seq=1 Ack=473 Win=200000 Len=0  tcp.stream == 11
+138   7.108633 65.55.186.235 -> 192.168.42.196 HTTP 1108 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 11
+139   7.108639 192.168.42.196 -> 65.55.186.235 TCP 54 45637 > http [ACK] Seq=473 Ack=1055 Win=16768 Len=0  tcp.stream == 11
+140   7.109283 192.168.42.196 -> 65.55.186.235 TCP 74 45641 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488768 TSecr=0 WS=128  tcp.stream == 15
+141   7.119413 192.168.42.196 -> 65.55.186.235 TCP 54 45637 > http [FIN, ACK] Seq=473 Ack=1055 Win=16768 Len=0  tcp.stream == 11
+142   7.137411 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 7
+143   7.137439 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [ACK] Seq=496 Ack=1261 Win=17152 Len=0  tcp.stream == 7
+144   7.147154 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 7
+145   7.147172 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [ACK] Seq=496 Ack=2521 Win=19712 Len=0  tcp.stream == 7
+146   7.147239 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 7
+147   7.147245 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [ACK] Seq=496 Ack=3781 Win=22272 Len=0  tcp.stream == 7
+148   7.157883 65.55.186.235 -> 192.168.42.196 HTTP 336 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 7
+149   7.157898 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [ACK] Seq=496 Ack=4063 Win=24704 Len=0  tcp.stream == 7
+150   7.157904 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45632 [ACK] Seq=1044 Ack=477 Win=200000 Len=0  tcp.stream == 6
+151   7.157910 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45632 [FIN, ACK] Seq=1044 Ack=477 Win=200000 Len=0  tcp.stream == 6
+152   7.157912 192.168.42.196 -> 65.55.186.235 TCP 54 45632 > http [ACK] Seq=477 Ack=1045 Win=16768 Len=0  tcp.stream == 6
+153   7.157917 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45638 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 12
+154   7.157921 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 12
+155   7.160232 192.168.42.196 -> 65.55.186.235 HTTP 595 GET /Library/proxy.mspx/cache/WhWqmPjMcaJO9WMnl3I!DQ/Ypflc5Ly4GXGCBBe5AQ_cg/a03ef5b5864f8ad5db1a5bc5d8076a9c.js HTTP/1.1   tcp.stream == 12
+156   7.164534 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [FIN, ACK] Seq=496 Ack=4063 Win=24704 Len=0  tcp.stream == 7
+157   7.196789 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45639 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 13
+158   7.196812 192.168.42.196 -> 65.55.186.235 TCP 54 45639 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 13
+159   7.196819 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45634 [ACK] Seq=1639 Ack=507 Win=200000 Len=0  tcp.stream == 8
+160   7.196822 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45634 [FIN, ACK] Seq=1639 Ack=507 Win=200000 Len=0  tcp.stream == 8
+161   7.196824 192.168.42.196 -> 65.55.186.235 TCP 54 45634 > http [ACK] Seq=507 Ack=1640 Win=19712 Len=0  tcp.stream == 8
+162   7.198687 192.168.42.196 -> 65.55.186.235 HTTP 523 GET /Images/fcmp_320.css HTTP/1.1   tcp.stream == 13
+163   7.206883 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45635 [ACK] Seq=875 Ack=508 Win=200000 Len=0  tcp.stream == 9
+164   7.206902 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45635 [FIN, ACK] Seq=875 Ack=508 Win=200000 Len=0  tcp.stream == 9
+165   7.206910 192.168.42.196 -> 65.55.186.235 TCP 54 45635 > http [ACK] Seq=508 Ack=876 Win=16384 Len=0  tcp.stream == 9
+166   7.206920 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45640 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 14
+167   7.206927 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 14
+168   7.210395 192.168.42.196 -> 65.55.186.235 HTTP 528 GET /library/js/AdvanceFeatures/webtrends.js HTTP/1.1   tcp.stream == 14
+169   7.217036 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45636 [ACK] Seq=1329 Ack=491 Win=200000 Len=0  tcp.stream == 10
+170   7.217056 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45636 [FIN, ACK] Seq=1329 Ack=491 Win=200000 Len=0  tcp.stream == 10
+171   7.217063 192.168.42.196 -> 65.55.186.235 TCP 54 45636 > http [ACK] Seq=491 Ack=1330 Win=17152 Len=0  tcp.stream == 10
+172   7.217071 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45641 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 15
+173   7.217077 192.168.42.196 -> 65.55.186.235 TCP 54 45641 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 15
+174   7.219220 192.168.42.196 -> 65.55.186.235 HTTP 533 GET /library/js/AdvanceFeatures/mp.advfeatures.js HTTP/1.1   tcp.stream == 15
+175   7.227288 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45637 [ACK] Seq=1055 Ack=474 Win=200000 Len=0  tcp.stream == 11
+176   7.227310 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45637 [FIN, ACK] Seq=1055 Ack=474 Win=200000 Len=0  tcp.stream == 11
+177   7.227317 192.168.42.196 -> 65.55.186.235 TCP 54 45637 > http [ACK] Seq=474 Ack=1056 Win=16768 Len=0  tcp.stream == 11
+179   7.270317 192.168.42.196 -> 65.54.95.43  TCP 74 36631 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43488808 TSecr=0 WS=128  tcp.stream == 16
+180   7.286783 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45638 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 12
+181   7.286800 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45633 [ACK] Seq=4063 Ack=497 Win=200000 Len=0  tcp.stream == 7
+182   7.296781 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45633 [FIN, ACK] Seq=4063 Ack=497 Win=200000 Len=0  tcp.stream == 7
+183   7.296802 192.168.42.196 -> 65.55.186.235 TCP 54 45633 > http [ACK] Seq=497 Ack=4064 Win=24704 Len=0  tcp.stream == 7
+184   7.306624 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45639 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 13
+185   7.317288 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45640 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 14
+186   7.326657 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45641 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 15
+187   7.386904  65.54.95.43 -> 192.168.42.196 TCP 66 http > 36631 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 16
+188   7.386935 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 16
+189   7.388523 192.168.42.196 -> 65.54.95.43  HTTP 481 GET /ajax/jQuery/jquery-1.5.2.min.js HTTP/1.1   tcp.stream == 16
+190   7.406898 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45638 [ACK] Seq=1 Ack=542 Win=200000 Len=0  tcp.stream == 12
+191   7.457657 65.55.186.235 -> 192.168.42.196 HTTP 1260 HTTP/1.1 200 OK  (text/css)  tcp.stream == 13
+192   7.457679 192.168.42.196 -> 65.55.186.235 TCP 54 45639 > http [ACK] Seq=470 Ack=1207 Win=17024 Len=0  tcp.stream == 13
+193   7.457688 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45640 [ACK] Seq=1 Ack=475 Win=200000 Len=0  tcp.stream == 14
+194   7.457691 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45641 [ACK] Seq=1 Ack=480 Win=200000 Len=0  tcp.stream == 15
+195   7.468318 192.168.42.196 -> 65.55.186.235 TCP 54 45639 > http [FIN, ACK] Seq=470 Ack=1207 Win=17024 Len=0  tcp.stream == 13
+196   7.477398 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 15
+197   7.477415 192.168.42.196 -> 65.55.186.235 TCP 54 45641 > http [ACK] Seq=480 Ack=1261 Win=17152 Len=0  tcp.stream == 15
+198   7.486873 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 15
+199   7.486888 192.168.42.196 -> 65.55.186.235 TCP 54 45641 > http [ACK] Seq=480 Ack=2521 Win=19712 Len=0  tcp.stream == 15
+200   7.486895 65.55.186.235 -> 192.168.42.196 HTTP 300 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 15
+201   7.486897 192.168.42.196 -> 65.55.186.235 TCP 54 45641 > http [ACK] Seq=480 Ack=2767 Win=22272 Len=0  tcp.stream == 15
+202   7.489989 192.168.42.196 -> 65.55.186.235 TCP 54 45641 > http [FIN, ACK] Seq=480 Ack=2767 Win=22272 Len=0  tcp.stream == 15
+203   7.496755  65.54.95.43 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 36631 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 16
+204   7.537381 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 14
+205   7.537397 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=475 Ack=1261 Win=17152 Len=0  tcp.stream == 14
+206   7.537404 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 14
+207   7.537406 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=475 Ack=2521 Win=19712 Len=0  tcp.stream == 14
+208   7.557883 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 14
+209   7.557900 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=475 Ack=3781 Win=22272 Len=0  tcp.stream == 14
+210   7.557907 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 14
+211   7.557909 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=475 Ack=5041 Win=24704 Len=0  tcp.stream == 14
+212   7.557910 65.55.186.235 -> 192.168.42.196 HTTP 172 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 14
+213   7.557913 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=475 Ack=5159 Win=24704 Len=0  tcp.stream == 14
+214   7.561301 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [FIN, ACK] Seq=475 Ack=5159 Win=24704 Len=0  tcp.stream == 14
+215   7.586905 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45639 [ACK] Seq=1207 Ack=471 Win=200000 Len=0  tcp.stream == 13
+216   7.586925 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45639 [FIN, ACK] Seq=1207 Ack=471 Win=200000 Len=0  tcp.stream == 13
+217   7.586932 192.168.42.196 -> 65.55.186.235 TCP 54 45639 > http [ACK] Seq=471 Ack=1208 Win=17024 Len=0  tcp.stream == 13
+218   7.606771  65.54.95.43 -> 192.168.42.196 TCP 54 http > 36631 [ACK] Seq=1 Ack=428 Win=200000 Len=0  tcp.stream == 16
+219   7.616656 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45641 [ACK] Seq=2767 Ack=481 Win=200000 Len=0  tcp.stream == 15
+220   7.616676 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45641 [FIN, ACK] Seq=2767 Ack=481 Win=200000 Len=0  tcp.stream == 15
+221   7.616683 192.168.42.196 -> 65.55.186.235 TCP 54 45641 > http [ACK] Seq=481 Ack=2768 Win=22272 Len=0  tcp.stream == 15
+222   7.666783 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45640 [ACK] Seq=5159 Ack=476 Win=200000 Len=0  tcp.stream == 14
+223   7.666801 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45640 [FIN, ACK] Seq=5159 Ack=476 Win=200000 Len=0  tcp.stream == 14
+224   7.666809 192.168.42.196 -> 65.55.186.235 TCP 54 45640 > http [ACK] Seq=476 Ack=5160 Win=24704 Len=0  tcp.stream == 14
+225   8.168173 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 12
+226   8.168192 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=1261 Win=17152 Len=0  tcp.stream == 12
+227   8.177272 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 12
+228   8.177310 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=2521 Win=19712 Len=0  tcp.stream == 12
+229   8.177373 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 12
+230   8.177376 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=3781 Win=22272 Len=0  tcp.stream == 12
+231   8.197875 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 12
+232   8.197893 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=5041 Win=24704 Len=0  tcp.stream == 12
+233   8.197984 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 12
+234   8.197990 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=6301 Win=27264 Len=0  tcp.stream == 12
+235   8.197993 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 12
+236   8.197996 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=7561 Win=29824 Len=0  tcp.stream == 12
+237   8.207766 65.55.186.235 -> 192.168.42.196 HTTP 865 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 12
+238   8.207783 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=542 Ack=8372 Win=32256 Len=0  tcp.stream == 12
+239   8.211430 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [FIN, ACK] Seq=542 Ack=8372 Win=32256 Len=0  tcp.stream == 12
+240   8.326780 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45638 [ACK] Seq=8372 Ack=543 Win=200000 Len=0  tcp.stream == 12
+241   8.326799 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45638 [FIN, ACK] Seq=8372 Ack=543 Win=200000 Len=0  tcp.stream == 12
+242   8.326807 192.168.42.196 -> 65.55.186.235 TCP 54 45638 > http [ACK] Seq=543 Ack=8373 Win=32256 Len=0  tcp.stream == 12
+243   8.588031  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+244   8.588047 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=1261 Win=17152 Len=0  tcp.stream == 16
+245   8.588054  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+246   8.588056 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=2521 Win=19712 Len=0  tcp.stream == 16
+247   8.597373  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+248   8.597393 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=3781 Win=22272 Len=0  tcp.stream == 16
+249   8.597401  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+250   8.597403 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=5041 Win=24704 Len=0  tcp.stream == 16
+251   8.607272  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+252   8.607289 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=6301 Win=27264 Len=0  tcp.stream == 16
+253   8.617121  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+254   8.617135 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=7561 Win=29824 Len=0  tcp.stream == 16
+255   8.617141  65.54.95.43 -> 192.168.42.196 TCP 1232 [TCP segment of a reassembled PDU]  tcp.stream == 16
+256   8.617143 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=8739 Win=32256 Len=0  tcp.stream == 16
+257   8.637892  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+258   8.637909 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=9999 Win=34816 Len=0  tcp.stream == 16
+259   8.637916  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+260   8.637918 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=11259 Win=37376 Len=0  tcp.stream == 16
+261   8.637921  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+262   8.637925 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=12519 Win=39808 Len=0  tcp.stream == 16
+263   8.647649  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+264   8.647668 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=13779 Win=42368 Len=0  tcp.stream == 16
+265   8.707775  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+266   8.707794 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=15039 Win=44928 Len=0  tcp.stream == 16
+267   8.707854  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+268   8.707859 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=16299 Win=47360 Len=0  tcp.stream == 16
+269   8.719397  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+270   8.719419 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=17559 Win=49920 Len=0  tcp.stream == 16
+271   8.726874  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+272   8.726889 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=18819 Win=52480 Len=0  tcp.stream == 16
+273   8.738263  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+274   8.738278 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=20079 Win=55040 Len=0  tcp.stream == 16
+275   8.748013  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+276   8.748028 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=21339 Win=57472 Len=0  tcp.stream == 16
+277   8.748035  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+278   8.748037 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=22599 Win=60032 Len=0  tcp.stream == 16
+279   8.748104  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+280   8.748110 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=23859 Win=62592 Len=0  tcp.stream == 16
+281   8.757768  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+282   8.757789 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=25119 Win=64128 Len=0  tcp.stream == 16
+283   8.757796  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+284   8.757798 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=26379 Win=62976 Len=0  tcp.stream == 16
+285   8.767240  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+286   8.767255 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=27639 Win=64128 Len=0  tcp.stream == 16
+287   8.777996  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+288   8.778011 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=28899 Win=64128 Len=0  tcp.stream == 16
+289   8.778016  65.54.95.43 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 16
+290   8.778018 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=30159 Win=62976 Len=0  tcp.stream == 16
+291   8.786863  65.54.95.43 -> 192.168.42.196 HTTP 406 HTTP/1.1 200 OK  (application/x-javascript)  tcp.stream == 16
+292   8.786902 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=428 Ack=30511 Win=64128 Len=0  tcp.stream == 16
+293   8.788994 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [FIN, ACK] Seq=428 Ack=30511 Win=64128 Len=0  tcp.stream == 16
+294   8.896747  65.54.95.43 -> 192.168.42.196 TCP 54 http > 36631 [ACK] Seq=30511 Ack=429 Win=200000 Len=0  tcp.stream == 16
+295   8.896766  65.54.95.43 -> 192.168.42.196 TCP 54 http > 36631 [FIN, ACK] Seq=30511 Ack=429 Win=200000 Len=0  tcp.stream == 16
+296   8.896773 192.168.42.196 -> 65.54.95.43  TCP 54 36631 > http [ACK] Seq=429 Ack=30512 Win=64128 Len=0  tcp.stream == 16
+297  10.511792 192.168.42.196 -> 65.55.186.235 TCP 74 45643 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489619 TSecr=0 WS=128  tcp.stream == 17
+299  10.602748 192.168.42.196 -> 65.55.186.235 TCP 74 45644 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489642 TSecr=0 WS=128  tcp.stream == 18
+300  10.610437 192.168.42.196 -> 65.55.186.235 TCP 74 45645 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489643 TSecr=0 WS=128  tcp.stream == 19
+301  10.627985 192.168.42.196 -> 65.55.186.235 TCP 74 45646 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489648 TSecr=0 WS=128  tcp.stream == 20
+303  10.639930 192.168.42.196 -> 65.55.186.235 TCP 74 45647 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489651 TSecr=0 WS=128  tcp.stream == 21
+304  10.641289 192.168.42.196 -> 65.55.186.235 TCP 74 45648 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489651 TSecr=0 WS=128  tcp.stream == 22
+305  10.666981 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45643 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 17
+306  10.667004 192.168.42.196 -> 65.55.186.235 TCP 54 45643 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 17
+307  10.716610 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45644 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 18
+308  10.716636 192.168.42.196 -> 65.55.186.235 TCP 54 45644 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 18
+309  10.726604 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45645 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 19
+310  10.726629 192.168.42.196 -> 65.55.186.235 TCP 54 45645 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 19
+311  10.736479 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45646 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 20
+312  10.736503 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 20
+313  10.756735 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45647 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 21
+314  10.756761 192.168.42.196 -> 65.55.186.235 TCP 54 45647 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 21
+315  10.756768 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45648 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 22
+316  10.756779 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 22
+319  10.776481 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45643 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 17
+320  10.791757 192.168.42.196 -> 65.55.186.235 HTTP 506 GET /Images/Logos/MS_Header_320.jpg HTTP/1.1   tcp.stream == 17
+321  10.799474 192.168.42.196 -> 65.55.186.235 HTTP 507 GET /Images/Icons/arrow_320-left.png HTTP/1.1   tcp.stream == 18
+322  10.800623 192.168.42.196 -> 65.55.186.235 HTTP 508 GET /Images/Icons/arrow_320-right.png HTTP/1.1   tcp.stream == 19
+323  10.802196 192.168.42.196 -> 65.55.186.235 HTTP 519 GET /en-us/Images/Panel/banner_xboxgames_320.jpg HTTP/1.1   tcp.stream == 20
+324  10.803572 192.168.42.196 -> 65.55.186.235 HTTP 519 GET /en-us/Images/Panel/banner_office365_320.jpg HTTP/1.1   tcp.stream == 22
+325  10.804665 192.168.42.196 -> 65.55.186.235 HTTP 517 GET /Images/Icons/PanelDarkArea_320x54_320.png HTTP/1.1   tcp.stream == 21
+327  10.827494 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45644 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 18
+329  10.836733 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45645 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 19
+330  10.846847 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45646 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 20
+331  10.878113 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45647 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 21
+332  10.878132 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45648 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 22
+335  11.056729 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45644 [ACK] Seq=1 Ack=454 Win=200000 Len=0  tcp.stream == 18
+336  11.056748 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45643 [ACK] Seq=1 Ack=453 Win=200000 Len=0  tcp.stream == 17
+339  11.087105 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 18
+340  11.087126 192.168.42.196 -> 65.55.186.235 TCP 54 45644 > http [ACK] Seq=454 Ack=1261 Win=17152 Len=0  tcp.stream == 18
+341  11.087133 65.55.186.235 -> 192.168.42.196 HTTP 240 HTTP/1.1 200 OK  (PNG)  tcp.stream == 18
+342  11.087135 192.168.42.196 -> 65.55.186.235 TCP 54 45644 > http [ACK] Seq=454 Ack=1447 Win=19712 Len=0  tcp.stream == 18
+343  11.093777 192.168.42.196 -> 65.55.186.235 TCP 54 45644 > http [FIN, ACK] Seq=454 Ack=1447 Win=19712 Len=0  tcp.stream == 18
+344  11.095037 192.168.42.196 -> 65.55.186.235 TCP 74 45649 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489765 TSecr=0 WS=128  tcp.stream == 23
+345  11.107730 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 17
+346  11.107749 192.168.42.196 -> 65.55.186.235 TCP 54 45643 > http [ACK] Seq=453 Ack=1261 Win=17152 Len=0  tcp.stream == 17
+347  11.107755 65.55.186.235 -> 192.168.42.196 HTTP 217 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 17
+348  11.107758 192.168.42.196 -> 65.55.186.235 TCP 54 45643 > http [ACK] Seq=453 Ack=1424 Win=19712 Len=0  tcp.stream == 17
+349  11.107760 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45648 [ACK] Seq=1 Ack=466 Win=200000 Len=0  tcp.stream == 22
+350  11.107766 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45645 [ACK] Seq=1 Ack=455 Win=200000 Len=0  tcp.stream == 19
+351  11.107768 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45647 [ACK] Seq=1 Ack=464 Win=200000 Len=0  tcp.stream == 21
+352  11.107770 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45646 [ACK] Seq=1 Ack=466 Win=200000 Len=0  tcp.stream == 20
+353  11.114556 192.168.42.196 -> 65.55.186.235 TCP 54 45643 > http [FIN, ACK] Seq=453 Ack=1424 Win=19712 Len=0  tcp.stream == 17
+354  11.115381 192.168.42.196 -> 65.55.186.235 TCP 74 45650 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489770 TSecr=0 WS=128  tcp.stream == 24
+355  11.117352 65.55.186.235 -> 192.168.42.196 HTTP 1300 HTTP/1.1 200 OK  (PNG)  tcp.stream == 19
+356  11.117372 192.168.42.196 -> 65.55.186.235 TCP 54 45645 > http [ACK] Seq=455 Ack=1247 Win=17152 Len=0  tcp.stream == 19
+357  11.121881 192.168.42.196 -> 65.55.186.235 TCP 54 45645 > http [FIN, ACK] Seq=455 Ack=1247 Win=17152 Len=0  tcp.stream == 19
+358  11.123133 192.168.42.196 -> 65.55.186.235 TCP 74 45651 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489772 TSecr=0 WS=128  tcp.stream == 25
+359  11.187602 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 21
+360  11.187622 192.168.42.196 -> 65.55.186.235 TCP 54 45647 > http [ACK] Seq=464 Ack=1261 Win=17152 Len=0  tcp.stream == 21
+361  11.207366 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 21
+362  11.207388 192.168.42.196 -> 65.55.186.235 TCP 54 45647 > http [ACK] Seq=464 Ack=2521 Win=19712 Len=0  tcp.stream == 21
+363  11.207395 65.55.186.235 -> 192.168.42.196 HTTP 870 HTTP/1.1 200 OK  (PNG)  tcp.stream == 21
+364  11.207398 192.168.42.196 -> 65.55.186.235 TCP 54 45647 > http [ACK] Seq=464 Ack=3337 Win=22272 Len=0  tcp.stream == 21
+365  11.207400 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45644 [ACK] Seq=1447 Ack=455 Win=200000 Len=0  tcp.stream == 18
+366  11.207406 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45644 [FIN, ACK] Seq=1447 Ack=455 Win=200000 Len=0  tcp.stream == 18
+367  11.207409 192.168.42.196 -> 65.55.186.235 TCP 54 45644 > http [ACK] Seq=455 Ack=1448 Win=19712 Len=0  tcp.stream == 18
+368  11.207415 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45649 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 23
+369  11.207421 192.168.42.196 -> 65.55.186.235 TCP 54 45649 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 23
+370  11.210403 192.168.42.196 -> 65.55.186.235 HTTP 512 GET /Images/Icons/carousel_dot_active.png HTTP/1.1   tcp.stream == 23
+371  11.211305 192.168.42.196 -> 65.55.186.235 TCP 54 45647 > http [FIN, ACK] Seq=464 Ack=3337 Win=22272 Len=0  tcp.stream == 21
+372  11.212968 192.168.42.196 -> 65.55.186.235 TCP 74 45652 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489794 TSecr=0 WS=128  tcp.stream == 26
+373  11.226853 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45643 [ACK] Seq=1424 Ack=454 Win=200000 Len=0  tcp.stream == 17
+374  11.226872 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45643 [FIN, ACK] Seq=1424 Ack=454 Win=200000 Len=0  tcp.stream == 17
+375  11.226880 192.168.42.196 -> 65.55.186.235 TCP 54 45643 > http [ACK] Seq=454 Ack=1425 Win=19712 Len=0  tcp.stream == 17
+376  11.226889 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45650 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 24
+377  11.226900 192.168.42.196 -> 65.55.186.235 TCP 54 45650 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 24
+378  11.231808 192.168.42.196 -> 65.55.186.235 HTTP 505 GET /Images/Icons/carousel_dot.png HTTP/1.1   tcp.stream == 24
+379  11.236728 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45645 [ACK] Seq=1247 Ack=456 Win=200000 Len=0  tcp.stream == 19
+380  11.236746 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45645 [FIN, ACK] Seq=1247 Ack=456 Win=200000 Len=0  tcp.stream == 19
+381  11.236754 192.168.42.196 -> 65.55.186.235 TCP 54 45645 > http [ACK] Seq=456 Ack=1248 Win=17152 Len=0  tcp.stream == 19
+382  11.236763 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45651 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 25
+383  11.236775 192.168.42.196 -> 65.55.186.235 TCP 54 45651 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 25
+384  11.239152 192.168.42.196 -> 65.55.186.235 HTTP 531 GET /en-us/Images/Tiles/Android/android_bing_156X140_320.png HTTP/1.1   tcp.stream == 25
+385  11.278104 65.55.186.235 -> 192.168.42.196 TCP 437 [TCP segment of a reassembled PDU]  tcp.stream == 20
+386  11.278125 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=384 Win=15744 Len=0  tcp.stream == 20
+387  11.278131 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+388  11.278135 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=1644 Win=18304 Len=0  tcp.stream == 20
+389  11.286970 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+390  11.286991 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=2904 Win=20736 Len=0  tcp.stream == 20
+391  11.319225 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+392  11.319250 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=4164 Win=23296 Len=0  tcp.stream == 20
+393  11.319340 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+394  11.319346 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=5424 Win=25856 Len=0  tcp.stream == 20
+395  11.319349 65.55.186.235 -> 192.168.42.196 TCP 341 [TCP segment of a reassembled PDU]  tcp.stream == 20
+396  11.319352 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=5711 Win=28288 Len=0  tcp.stream == 20
+397  11.327979 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+398  11.328000 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=6971 Win=30848 Len=0  tcp.stream == 20
+399  11.338103 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+400  11.338124 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=8231 Win=33408 Len=0  tcp.stream == 20
+401  11.338214 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+402  11.338220 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=9491 Win=35840 Len=0  tcp.stream == 20
+403  11.338223 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+404  11.338232 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=10751 Win=38400 Len=0  tcp.stream == 20
+405  11.338343 65.55.186.235 -> 192.168.42.196 TCP 709 [TCP segment of a reassembled PDU]  tcp.stream == 20
+406  11.338349 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=11406 Win=40960 Len=0  tcp.stream == 20
+407  11.338352 65.55.186.235 -> 192.168.42.196 TCP 438 [TCP segment of a reassembled PDU]  tcp.stream == 22
+408  11.338355 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=385 Win=15744 Len=0  tcp.stream == 22
+409  11.338360 65.55.186.235 -> 192.168.42.196 TCP 80 [TCP segment of a reassembled PDU]  tcp.stream == 22
+410  11.338364 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=411 Win=15744 Len=0  tcp.stream == 22
+411  11.346612 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+412  11.346633 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=1671 Win=18304 Len=0  tcp.stream == 22
+413  11.357978 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+414  11.357998 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=2931 Win=20736 Len=0  tcp.stream == 22
+415  11.358005 65.55.186.235 -> 192.168.42.196 TCP 89 [TCP segment of a reassembled PDU]  tcp.stream == 22
+416  11.358007 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=2966 Win=20736 Len=0  tcp.stream == 22
+417  11.358090 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 20
+418  11.358096 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=12666 Win=43392 Len=0  tcp.stream == 20
+419  11.367233 65.55.186.235 -> 192.168.42.196 TCP 977 [TCP segment of a reassembled PDU]  tcp.stream == 20
+420  11.367253 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=13589 Win=45952 Len=0  tcp.stream == 20
+421  11.367260 65.55.186.235 -> 192.168.42.196 HTTP 278 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 20
+422  11.367263 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=466 Ack=13813 Win=48512 Len=0  tcp.stream == 20
+424  11.371623 192.168.42.196 -> 66.150.117.33 TCP 74 51669 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489834 TSecr=0 WS=128  tcp.stream == 27
+425  11.372590 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [FIN, ACK] Seq=466 Ack=13813 Win=48512 Len=0  tcp.stream == 20
+426  11.373728 192.168.42.196 -> 65.55.186.235 TCP 74 45654 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489834 TSecr=0 WS=128  tcp.stream == 28
+427  11.378104 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+428  11.378124 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=4226 Win=23296 Len=0  tcp.stream == 22
+429  11.378131 65.55.186.235 -> 192.168.42.196 TCP 859 [TCP segment of a reassembled PDU]  tcp.stream == 22
+430  11.378134 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=5031 Win=25856 Len=0  tcp.stream == 22
+431  11.386613 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+432  11.386631 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=6291 Win=28288 Len=0  tcp.stream == 22
+433  11.407850 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+434  11.407868 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=7551 Win=30848 Len=0  tcp.stream == 22
+435  11.407964 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+436  11.407969 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=8811 Win=33408 Len=0  tcp.stream == 22
+437  11.417855 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+438  11.417875 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=10071 Win=35840 Len=0  tcp.stream == 22
+439  11.417882 65.55.186.235 -> 192.168.42.196 TCP 749 [TCP segment of a reassembled PDU]  tcp.stream == 22
+440  11.417885 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=10766 Win=38400 Len=0  tcp.stream == 22
+441  11.428099 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+442  11.428118 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=12026 Win=40960 Len=0  tcp.stream == 22
+443  11.428212 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 22
+444  11.428218 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=13286 Win=43392 Len=0  tcp.stream == 22
+445  11.428346 65.55.186.235 -> 192.168.42.196 HTTP 652 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 22
+446  11.428353 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=466 Ack=13884 Win=45952 Len=0  tcp.stream == 22
+447  11.428356 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45649 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 23
+449  11.428364 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45647 [ACK] Seq=3337 Ack=465 Win=200000 Len=0  tcp.stream == 21
+450  11.428368 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45652 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 26
+451  11.428374 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 26
+452  11.428377 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45650 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 24
+453  11.428379 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45647 [FIN, ACK] Seq=3337 Ack=465 Win=200000 Len=0  tcp.stream == 21
+454  11.428381 192.168.42.196 -> 65.55.186.235 TCP 54 45647 > http [ACK] Seq=465 Ack=3338 Win=22272 Len=0  tcp.stream == 21
+455  11.428387 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45651 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 25
+456  11.434705 192.168.42.196 -> 65.55.186.235 HTTP 532 GET /en-us/Images/Tiles/Android/android_msnbc_156X140_320.png HTTP/1.1   tcp.stream == 26
+457  11.435783 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [FIN, ACK] Seq=466 Ack=13884 Win=45952 Len=0  tcp.stream == 22
+458  11.436654 192.168.42.196 -> 65.55.186.235 TCP 74 45655 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489850 TSecr=0 WS=128  tcp.stream == 29
+459  11.437820 192.168.42.196 -> 65.54.95.85  TCP 74 43950 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489850 TSecr=0 WS=128  tcp.stream == 30
+460  11.456604 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45649 [ACK] Seq=1 Ack=459 Win=200000 Len=0  tcp.stream == 23
+461  11.456623 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45650 [ACK] Seq=1 Ack=452 Win=200000 Len=0  tcp.stream == 24
+462  11.487726 66.150.117.33 -> 192.168.42.196 TCP 66 http > 51669 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 27
+463  11.487755 192.168.42.196 -> 66.150.117.33 TCP 54 51669 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 27
+464  11.487844 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 23
+465  11.487851 192.168.42.196 -> 65.55.186.235 TCP 54 45649 > http [ACK] Seq=459 Ack=1261 Win=17152 Len=0  tcp.stream == 23
+466  11.487854 65.55.186.235 -> 192.168.42.196 HTTP 238 HTTP/1.1 200 OK  (PNG)  tcp.stream == 23
+467  11.487859 192.168.42.196 -> 65.55.186.235 TCP 54 45649 > http [ACK] Seq=459 Ack=1445 Win=19712 Len=0  tcp.stream == 23
+468  11.487861 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45646 [ACK] Seq=13813 Ack=467 Win=200000 Len=0  tcp.stream == 20
+469  11.487868 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45646 [FIN, ACK] Seq=13813 Ack=467 Win=200000 Len=0  tcp.stream == 20
+470  11.487874 192.168.42.196 -> 65.55.186.235 TCP 54 45646 > http [ACK] Seq=467 Ack=13814 Win=48512 Len=0  tcp.stream == 20
+471  11.487881 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45654 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 28
+472  11.487886 192.168.42.196 -> 65.55.186.235 TCP 54 45654 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 28
+473  11.487961 65.55.186.235 -> 192.168.42.196 HTTP 739 HTTP/1.1 200 OK  (PNG)  tcp.stream == 24
+474  11.487967 192.168.42.196 -> 65.55.186.235 TCP 54 45650 > http [ACK] Seq=452 Ack=686 Win=16000 Len=0  tcp.stream == 24
+475  11.494669 192.168.42.196 -> 65.55.186.235 HTTP 514 GET /library/assets/images/ratingstar_4.gif HTTP/1.1   tcp.stream == 28
+476  11.496123 192.168.42.196 -> 66.150.117.33 HTTP 1026 GET /dcs3k3lty00000oa4hws4uybu_3c3o/dcs.gif?dcsdat=120216173807&dcssip=m.microsoft.com&dcsuri=%2Fen-us%2Fdefault.mspx&dcscfg=&dcsref=none&dcsqry=none&sid=ylSLuMdh3UOblcNCTdgvsw&dm=Android+4.x&mo=T-Mobile&c=US&df=Generic&dg=hi&sc=1&sj=0&os=Android&ov=4.x&x=320&y=640&ml=xhtml&sm=0&scc=1&sv=1&se=1&ss=1&wt.ti=Microsoft+Home&nvr=New&wt.es=android&wt.mpe=mHP-views&wt.mpvf=10104&wt.mpoem=Unknown&wt.mpmo=Unknown&wt.mpivcr=1&wt.ua=Mozilla%2F5.0+(Linux%3B+U%3B+Android+4.0.2%3B+en-us%3B+google_sdk+Build%2FICS_MR0)+AppleWebKit%2F534.30+(KHTML,+like+Gecko)+Version%2F4.0+Mobile+Safari%2F534.30&wt.mpjsr=1 HTTP/1.1   tcp.stream == 27
+477  11.510729 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 25
+478  11.510751 192.168.42.196 -> 65.55.186.235 TCP 54 45651 > http [ACK] Seq=478 Ack=1261 Win=17152 Len=0  tcp.stream == 25
+479  11.510759 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 25
+480  11.510770 192.168.42.196 -> 65.55.186.235 TCP 54 45651 > http [ACK] Seq=478 Ack=2521 Win=19712 Len=0  tcp.stream == 25
+481  11.510773 65.55.186.235 -> 192.168.42.196 HTTP 139 HTTP/1.1 200 OK  (PNG)  tcp.stream == 25
+482  11.510776 192.168.42.196 -> 65.55.186.235 TCP 54 45651 > http [ACK] Seq=478 Ack=2606 Win=19712 Len=0  tcp.stream == 25
+483  11.513161 192.168.42.196 -> 65.55.186.235 TCP 54 45650 > http [FIN, ACK] Seq=452 Ack=686 Win=16000 Len=0  tcp.stream == 24
+484  11.514013 192.168.42.196 -> 65.55.186.235 TCP 74 45657 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489869 TSecr=0 WS=128  tcp.stream == 31
+485  11.515228 192.168.42.196 -> 65.55.186.235 TCP 54 45649 > http [FIN, ACK] Seq=459 Ack=1445 Win=19712 Len=0  tcp.stream == 23
+486  11.515989 192.168.42.196 -> 65.55.186.235 TCP 74 45658 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489870 TSecr=0 WS=128  tcp.stream == 32
+487  11.529840 192.168.42.196 -> 65.55.186.235 TCP 54 45651 > http [FIN, ACK] Seq=478 Ack=2606 Win=19712 Len=0  tcp.stream == 25
+488  11.530715 192.168.42.196 -> 65.55.186.235 TCP 74 45659 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489874 TSecr=0 WS=128  tcp.stream == 33
+489  11.537599 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45652 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 26
+490  11.556731 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45648 [ACK] Seq=13884 Ack=467 Win=200000 Len=0  tcp.stream == 22
+491  11.556751 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45648 [FIN, ACK] Seq=13884 Ack=467 Win=200000 Len=0  tcp.stream == 22
+492  11.556759 192.168.42.196 -> 65.55.186.235 TCP 54 45648 > http [ACK] Seq=467 Ack=13885 Win=45952 Len=0  tcp.stream == 22
+493  11.556770 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45655 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 29
+494  11.556779 192.168.42.196 -> 65.55.186.235 TCP 54 45655 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 29
+495  11.556785  65.54.95.85 -> 192.168.42.196 TCP 66 http > 43950 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 30
+496  11.556795 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 30
+497  11.559604 192.168.42.196 -> 65.54.95.85  HTTP 509 GET /image.aspx?uuid=e0e1f9c4-0ee5-4873-b805-624da4b9aeea&w=320&h=240 HTTP/1.1   tcp.stream == 30
+498  11.560754 192.168.42.196 -> 65.55.186.235 HTTP 508 GET /Images/Icons/Expand_Icon_480.png HTTP/1.1   tcp.stream == 29
+499  11.606849 66.150.117.33 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 51669 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 27
+500  11.618608 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45654 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 28
+501  11.626973 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45650 [ACK] Seq=686 Ack=453 Win=200000 Len=0  tcp.stream == 24
+502  11.626991 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45650 [FIN, ACK] Seq=686 Ack=453 Win=200000 Len=0  tcp.stream == 24
+503  11.626998 192.168.42.196 -> 65.55.186.235 TCP 54 45650 > http [ACK] Seq=453 Ack=687 Win=16000 Len=0  tcp.stream == 24
+504  11.636973 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45657 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 31
+505  11.636998 192.168.42.196 -> 65.55.186.235 TCP 54 45657 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 31
+506  11.637092 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45649 [ACK] Seq=1445 Ack=460 Win=200000 Len=0  tcp.stream == 23
+507  11.637098 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45649 [FIN, ACK] Seq=1445 Ack=460 Win=200000 Len=0  tcp.stream == 23
+508  11.637102 192.168.42.196 -> 65.55.186.235 TCP 54 45649 > http [ACK] Seq=460 Ack=1446 Win=19712 Len=0  tcp.stream == 23
+509  11.637108 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45658 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 32
+510  11.637112 192.168.42.196 -> 65.55.186.235 TCP 54 45658 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 32
+511  11.637115 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45651 [ACK] Seq=2606 Ack=479 Win=200000 Len=0  tcp.stream == 25
+512  11.637118 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45659 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 33
+513  11.637121 192.168.42.196 -> 65.55.186.235 TCP 54 45659 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 33
+514  11.637123 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45651 [FIN, ACK] Seq=2606 Ack=479 Win=200000 Len=0  tcp.stream == 25
+515  11.637125 192.168.42.196 -> 65.55.186.235 TCP 54 45651 > http [ACK] Seq=479 Ack=2607 Win=19712 Len=0  tcp.stream == 25
+516  11.638856 192.168.42.196 -> 65.55.186.235 HTTP 510 GET /Images/Icons/Collapse_Icon_480.png HTTP/1.1   tcp.stream == 31
+517  11.641517 192.168.42.196 -> 65.55.186.235 HTTP 507 GET /Images/Products/Windows_320.jpg HTTP/1.1   tcp.stream == 33
+518  11.642700 192.168.42.196 -> 65.55.186.235 HTTP 509 GET /Images/Products/HP_Office_320.jpg HTTP/1.1   tcp.stream == 32
+519  11.657725 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45652 [ACK] Seq=1 Ack=479 Win=200000 Len=0  tcp.stream == 26
+520  11.666974 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45655 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 29
+521  11.666990  65.54.95.85 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 43950 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 30
+522  11.706606 66.150.117.33 -> 192.168.42.196 HTTP 1076 HTTP/1.1 303 Object Moved   tcp.stream == 27
+523  11.706627 192.168.42.196 -> 66.150.117.33 TCP 54 51669 > http [ACK] Seq=973 Ack=1023 Win=16768 Len=0  tcp.stream == 27
+524  11.746608 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45657 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 31
+525  11.769851 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45658 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 32
+526  11.769867 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45659 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 33
+527  11.769959 65.55.186.235 -> 192.168.42.196 HTTP 794 HTTP/1.1 200 OK  (GIF89a)  tcp.stream == 28
+528  11.769972 192.168.42.196 -> 65.55.186.235 TCP 54 45654 > http [ACK] Seq=461 Ack=741 Win=16128 Len=0  tcp.stream == 28
+529  11.769978 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 26
+530  11.769981 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [ACK] Seq=479 Ack=1261 Win=17152 Len=0  tcp.stream == 26
+531  11.770090 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 26
+532  11.770096 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [ACK] Seq=479 Ack=2521 Win=19712 Len=0  tcp.stream == 26
+533  11.770099 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 26
+534  11.770103 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [ACK] Seq=479 Ack=3781 Win=22272 Len=0  tcp.stream == 26
+535  11.770105 65.55.186.235 -> 192.168.42.196 HTTP 628 HTTP/1.1 200 OK  (PNG)  tcp.stream == 26
+536  11.770108 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [ACK] Seq=479 Ack=4355 Win=24704 Len=0  tcp.stream == 26
+537  11.792256 192.168.42.196 -> 65.55.186.235 TCP 54 45654 > http [FIN, ACK] Seq=461 Ack=741 Win=16128 Len=0  tcp.stream == 28
+538  11.793365 192.168.42.196 -> 65.55.186.235 TCP 74 45660 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489939 TSecr=0 WS=128  tcp.stream == 34
+539  11.806608  65.54.95.85 -> 192.168.42.196 TCP 54 http > 43950 [ACK] Seq=1 Ack=456 Win=200000 Len=0  tcp.stream == 30
+540  11.806624 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45655 [ACK] Seq=1 Ack=455 Win=200000 Len=0  tcp.stream == 29
+541  11.818926 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [FIN, ACK] Seq=479 Ack=4355 Win=24704 Len=0  tcp.stream == 26
+542  11.819922 192.168.42.196 -> 65.55.186.235 TCP 74 45661 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489946 TSecr=0 WS=128  tcp.stream == 35
+543  11.837475 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 29
+544  11.837501 192.168.42.196 -> 65.55.186.235 TCP 54 45655 > http [ACK] Seq=455 Ack=1261 Win=17152 Len=0  tcp.stream == 29
+545  11.837588 65.55.186.235 -> 192.168.42.196 HTTP 594 HTTP/1.1 200 OK  (PNG)  tcp.stream == 29
+546  11.837593 192.168.42.196 -> 65.55.186.235 TCP 54 45655 > http [ACK] Seq=455 Ack=1801 Win=19712 Len=0  tcp.stream == 29
+547  11.851513 192.168.42.196 -> 65.55.186.235 TCP 54 45655 > http [FIN, ACK] Seq=455 Ack=1801 Win=19712 Len=0  tcp.stream == 29
+548  11.852365 192.168.42.196 -> 65.55.186.235 TCP 74 45662 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489954 TSecr=0 WS=128  tcp.stream == 36
+549  11.858109  65.54.95.85 -> 192.168.42.196 TCP 384 [TCP segment of a reassembled PDU]  tcp.stream == 30
+550  11.858131 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=331 Win=15744 Len=0  tcp.stream == 30
+551  11.858138  65.54.95.85 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 30
+552  11.858141 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=1591 Win=18304 Len=0  tcp.stream == 30
+553  11.866973  65.54.95.85 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 30
+554  11.866993 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=2851 Win=20736 Len=0  tcp.stream == 30
+555  11.877104  65.54.95.85 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 30
+556  11.877122 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=4111 Win=23296 Len=0  tcp.stream == 30
+557  11.877128  65.54.95.85 -> 192.168.42.196 TCP 1242 [TCP segment of a reassembled PDU]  tcp.stream == 30
+558  11.877131 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=5299 Win=25856 Len=0  tcp.stream == 30
+559  11.887100  65.54.95.85 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 30
+560  11.887121 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=6559 Win=28288 Len=0  tcp.stream == 30
+561  11.907224  65.54.95.85 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 30
+562  11.907243 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=7819 Win=30848 Len=0  tcp.stream == 30
+563  11.907335  65.54.95.85 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 30
+564  11.907343 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=9079 Win=33408 Len=0  tcp.stream == 30
+565  11.918606  65.54.95.85 -> 192.168.42.196 HTTP 826 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 30
+566  11.918627 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=456 Ack=9851 Win=35840 Len=0  tcp.stream == 30
+567  11.918709 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 31
+568  11.918717 192.168.42.196 -> 65.55.186.235 TCP 54 45657 > http [ACK] Seq=457 Ack=1261 Win=17152 Len=0  tcp.stream == 31
+569  11.918720 65.55.186.235 -> 192.168.42.196 HTTP 769 HTTP/1.1 200 OK  (PNG)  tcp.stream == 31
+570  11.918723 192.168.42.196 -> 65.55.186.235 TCP 54 45657 > http [ACK] Seq=457 Ack=1976 Win=19712 Len=0  tcp.stream == 31
+571  11.918725 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45654 [ACK] Seq=741 Ack=462 Win=200000 Len=0  tcp.stream == 28
+572  11.918838 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45660 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 34
+573  11.918848 192.168.42.196 -> 65.55.186.235 TCP 54 45660 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 34
+574  11.918851 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45654 [FIN, ACK] Seq=741 Ack=462 Win=200000 Len=0  tcp.stream == 28
+575  11.918857 192.168.42.196 -> 65.55.186.235 TCP 54 45654 > http [ACK] Seq=462 Ack=742 Win=16128 Len=0  tcp.stream == 28
+576  11.918863 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45659 [ACK] Seq=1 Ack=454 Win=200000 Len=0  tcp.stream == 33
+577  11.918867 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45658 [ACK] Seq=1 Ack=456 Win=200000 Len=0  tcp.stream == 32
+578  11.922483 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [FIN, ACK] Seq=456 Ack=9851 Win=35840 Len=0  tcp.stream == 30
+579  11.926848 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45652 [ACK] Seq=4355 Ack=480 Win=200000 Len=0  tcp.stream == 26
+580  11.926866 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45652 [FIN, ACK] Seq=4355 Ack=480 Win=200000 Len=0  tcp.stream == 26
+581  11.926873 192.168.42.196 -> 65.55.186.235 TCP 54 45652 > http [ACK] Seq=480 Ack=4356 Win=24704 Len=0  tcp.stream == 26
+582  11.926882 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45661 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 35
+583  11.926903 192.168.42.196 -> 65.55.186.235 TCP 54 45661 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 35
+584  11.927597 192.168.42.196 -> 65.55.186.235 TCP 54 45657 > http [FIN, ACK] Seq=457 Ack=1976 Win=19712 Len=0  tcp.stream == 31
+585  11.928780 192.168.42.196 -> 65.55.186.235 TCP 74 45663 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489973 TSecr=0 WS=128  tcp.stream == 37
+586  11.942637 192.168.42.196 -> 65.55.186.235 HTTP 504 GET /Images/Products/Xbox_320.jpg HTTP/1.1   tcp.stream == 34
+587  11.943919 192.168.42.196 -> 65.55.186.235 HTTP 502 GET /Images/Products/wp_320.jpg HTTP/1.1   tcp.stream == 35
+588  11.947355 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 33
+589  11.947376 192.168.42.196 -> 65.55.186.235 TCP 54 45659 > http [ACK] Seq=454 Ack=1261 Win=17152 Len=0  tcp.stream == 33
+590  11.947383 65.55.186.235 -> 192.168.42.196 HTTP 186 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 33
+591  11.947385 192.168.42.196 -> 65.55.186.235 TCP 54 45659 > http [ACK] Seq=454 Ack=1393 Win=19712 Len=0  tcp.stream == 33
+592  11.947388 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 32
+593  11.947390 192.168.42.196 -> 65.55.186.235 TCP 54 45658 > http [ACK] Seq=456 Ack=1261 Win=17152 Len=0  tcp.stream == 32
+594  11.947392 65.55.186.235 -> 192.168.42.196 HTTP 220 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 32
+595  11.947394 192.168.42.196 -> 65.55.186.235 TCP 54 45658 > http [ACK] Seq=456 Ack=1427 Win=19712 Len=0  tcp.stream == 32
+596  11.959094 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45655 [ACK] Seq=1801 Ack=456 Win=200000 Len=0  tcp.stream == 29
+597  11.959112 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45655 [FIN, ACK] Seq=1801 Ack=456 Win=200000 Len=0  tcp.stream == 29
+598  11.959119 192.168.42.196 -> 65.55.186.235 TCP 54 45655 > http [ACK] Seq=456 Ack=1802 Win=19712 Len=0  tcp.stream == 29
+599  11.966603 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45662 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 36
+600  11.966625 192.168.42.196 -> 65.55.186.235 TCP 54 45662 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 36
+601  12.001814 192.168.42.196 -> 207.46.232.182 TCP 54 47669 > http [FIN, ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 1
+602  12.005267 192.168.42.196 -> 65.55.186.235 TCP 54 45659 > http [FIN, ACK] Seq=454 Ack=1393 Win=19712 Len=0  tcp.stream == 33
+603  12.006215 192.168.42.196 -> 65.55.186.235 TCP 74 45664 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489992 TSecr=0 WS=128  tcp.stream == 38
+604  12.027345 192.168.42.196 -> 65.55.186.235 TCP 54 45658 > http [FIN, ACK] Seq=456 Ack=1427 Win=19712 Len=0  tcp.stream == 32
+605  12.028148 192.168.42.196 -> 65.55.186.235 TCP 74 45665 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43489998 TSecr=0 WS=128  tcp.stream == 39
+606  12.041695 192.168.42.196 -> 65.55.186.235 HTTP 508 GET /Images/Products/students_320.jpg HTTP/1.1   tcp.stream == 36
+607  12.056979  65.54.95.85 -> 192.168.42.196 TCP 54 http > 43950 [ACK] Seq=9851 Ack=457 Win=200000 Len=0  tcp.stream == 30
+608  12.057095 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45660 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 34
+609  12.057101 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45661 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 35
+610  12.057104 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45657 [ACK] Seq=1976 Ack=458 Win=200000 Len=0  tcp.stream == 31
+611  12.057107 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45663 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 37
+612  12.057117 192.168.42.196 -> 65.55.186.235 TCP 54 45663 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 37
+613  12.057123  65.54.95.85 -> 192.168.42.196 TCP 54 http > 43950 [FIN, ACK] Seq=9851 Ack=457 Win=200000 Len=0  tcp.stream == 30
+614  12.057127 192.168.42.196 -> 65.54.95.85  TCP 54 43950 > http [ACK] Seq=457 Ack=9852 Win=35840 Len=0  tcp.stream == 30
+615  12.057134 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45657 [FIN, ACK] Seq=1976 Ack=458 Win=200000 Len=0  tcp.stream == 31
+616  12.057136 192.168.42.196 -> 65.55.186.235 TCP 54 45657 > http [ACK] Seq=458 Ack=1977 Win=19712 Len=0  tcp.stream == 31
+617  12.060493 192.168.42.196 -> 65.55.186.235 HTTP 503 GET /Images/Products/msn_320.jpg HTTP/1.1   tcp.stream == 37
+618  12.076729 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45662 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 36
+619  12.116731 207.46.232.182 -> 192.168.42.196 TCP 54 http > 47669 [ACK] Seq=1 Ack=2 Win=200000 Len=0  tcp.stream == 1
+620  12.116752 207.46.232.182 -> 192.168.42.196 TCP 54 http > 47669 [FIN, ACK] Seq=1 Ack=2 Win=200000 Len=0  tcp.stream == 1
+621  12.116760 192.168.42.196 -> 207.46.232.182 TCP 54 47669 > http [ACK] Seq=2 Ack=2 Win=14720 Len=0  tcp.stream == 1
+622  12.126846 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45659 [ACK] Seq=1393 Ack=455 Win=200000 Len=0  tcp.stream == 33
+623  12.126865 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45659 [FIN, ACK] Seq=1393 Ack=455 Win=200000 Len=0  tcp.stream == 33
+624  12.126872 192.168.42.196 -> 65.55.186.235 TCP 54 45659 > http [ACK] Seq=455 Ack=1394 Win=19712 Len=0  tcp.stream == 33
+625  12.126882 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45664 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 38
+626  12.126888 192.168.42.196 -> 65.55.186.235 TCP 54 45664 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 38
+627  12.129228 192.168.42.196 -> 65.55.186.235 HTTP 508 GET /Images/Products/Dynamics_320.jpg HTTP/1.1   tcp.stream == 38
+628  12.137232 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45658 [ACK] Seq=1427 Ack=457 Win=200000 Len=0  tcp.stream == 32
+629  12.137254 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45658 [FIN, ACK] Seq=1427 Ack=457 Win=200000 Len=0  tcp.stream == 32
+630  12.137262 192.168.42.196 -> 65.55.186.235 TCP 54 45658 > http [ACK] Seq=457 Ack=1428 Win=19712 Len=0  tcp.stream == 32
+631  12.137272 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45665 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 39
+632  12.137279 192.168.42.196 -> 65.55.186.235 TCP 54 45665 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 39
+633  12.139922 192.168.42.196 -> 65.55.186.235 HTTP 505 GET /Images/Products/Azure_320.jpg HTTP/1.1   tcp.stream == 39
+634  12.166602 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45663 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 37
+635  12.206725 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45661 [ACK] Seq=1 Ack=449 Win=200000 Len=0  tcp.stream == 35
+636  12.206741 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45660 [ACK] Seq=1 Ack=451 Win=200000 Len=0  tcp.stream == 34
+637  12.237729 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45664 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 38
+638  12.246601 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45665 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 39
+639  12.266852 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 34
+640  12.266872 192.168.42.196 -> 65.55.186.235 TCP 54 45660 > http [ACK] Seq=451 Ack=1261 Win=17152 Len=0  tcp.stream == 34
+641  12.266878 65.55.186.235 -> 192.168.42.196 HTTP 99 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 34
+642  12.266881 192.168.42.196 -> 65.55.186.235 TCP 54 45660 > http [ACK] Seq=451 Ack=1306 Win=17152 Len=0  tcp.stream == 34
+643  12.272053 192.168.42.196 -> 65.55.186.235 TCP 54 45660 > http [FIN, ACK] Seq=451 Ack=1306 Win=17152 Len=0  tcp.stream == 34
+644  12.272977 192.168.42.196 -> 65.55.186.235 TCP 74 45666 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43490059 TSecr=0 WS=128  tcp.stream == 40
+645  12.306604 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45663 [ACK] Seq=1 Ack=450 Win=200000 Len=0  tcp.stream == 37
+646  12.306622 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45662 [ACK] Seq=1 Ack=455 Win=200000 Len=0  tcp.stream == 36
+647  12.337983 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 35
+648  12.338004 192.168.42.196 -> 65.55.186.235 TCP 54 45661 > http [ACK] Seq=449 Ack=1261 Win=17152 Len=0  tcp.stream == 35
+649  12.338012 65.55.186.235 -> 192.168.42.196 HTTP 580 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 35
+650  12.338016 192.168.42.196 -> 65.55.186.235 TCP 54 45661 > http [ACK] Seq=449 Ack=1787 Win=19712 Len=0  tcp.stream == 35
+651  12.344442 192.168.42.196 -> 65.55.186.235 TCP 54 45661 > http [FIN, ACK] Seq=449 Ack=1787 Win=19712 Len=0  tcp.stream == 35
+652  12.345878 192.168.42.196 -> 65.55.186.235 TCP 74 45667 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43490077 TSecr=0 WS=128  tcp.stream == 41
+653  12.367608 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 36
+654  12.367631 192.168.42.196 -> 65.55.186.235 TCP 54 45662 > http [ACK] Seq=455 Ack=1261 Win=17152 Len=0  tcp.stream == 36
+655  12.367638 65.55.186.235 -> 192.168.42.196 HTTP 422 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 36
+656  12.367642 192.168.42.196 -> 65.55.186.235 TCP 54 45662 > http [ACK] Seq=455 Ack=1629 Win=19712 Len=0  tcp.stream == 36
+657  12.367645 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45664 [ACK] Seq=1 Ack=455 Win=200000 Len=0  tcp.stream == 38
+658  12.367709 65.55.186.235 -> 192.168.42.196 HTTP 1191 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 37
+659  12.367714 192.168.42.196 -> 65.55.186.235 TCP 54 45663 > http [ACK] Seq=450 Ack=1138 Win=16896 Len=0  tcp.stream == 37
+660  12.381338 192.168.42.196 -> 65.55.186.235 TCP 54 45663 > http [FIN, ACK] Seq=450 Ack=1138 Win=16896 Len=0  tcp.stream == 37
+661  12.382455 192.168.42.196 -> 65.55.186.235 TCP 74 45668 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43490086 TSecr=0 WS=128  tcp.stream == 42
+662  12.389557 192.168.42.196 -> 65.55.186.235 TCP 54 45662 > http [FIN, ACK] Seq=455 Ack=1629 Win=19712 Len=0  tcp.stream == 36
+663  12.390410 192.168.42.196 -> 65.55.186.235 TCP 74 45669 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43490088 TSecr=0 WS=128  tcp.stream == 43
+664  12.406723 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45660 [ACK] Seq=1306 Ack=452 Win=200000 Len=0  tcp.stream == 34
+665  12.406837 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45660 [FIN, ACK] Seq=1306 Ack=452 Win=200000 Len=0  tcp.stream == 34
+666  12.406848 192.168.42.196 -> 65.55.186.235 TCP 54 45660 > http [ACK] Seq=452 Ack=1307 Win=17152 Len=0  tcp.stream == 34
+667  12.406859 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45666 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 40
+668  12.406866 192.168.42.196 -> 65.55.186.235 TCP 54 45666 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 40
+669  12.406870 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45665 [ACK] Seq=1 Ack=452 Win=200000 Len=0  tcp.stream == 39
+670  12.408994 192.168.42.196 -> 65.55.186.235 HTTP 512 GET /Images/Products/VisualStudio_320.jpg HTTP/1.1   tcp.stream == 40
+671  12.426972 65.55.186.235 -> 192.168.42.196 HTTP 1274 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 38
+672  12.426992 192.168.42.196 -> 65.55.186.235 TCP 54 45664 > http [ACK] Seq=455 Ack=1221 Win=17152 Len=0  tcp.stream == 38
+673  12.432283 192.168.42.196 -> 65.55.186.235 TCP 54 45664 > http [FIN, ACK] Seq=455 Ack=1221 Win=17152 Len=0  tcp.stream == 38
+674  12.456730 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45661 [ACK] Seq=1787 Ack=450 Win=200000 Len=0  tcp.stream == 35
+675  12.456752 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45661 [FIN, ACK] Seq=1787 Ack=450 Win=200000 Len=0  tcp.stream == 35
+676  12.456760 192.168.42.196 -> 65.55.186.235 TCP 54 45661 > http [ACK] Seq=450 Ack=1788 Win=19712 Len=0  tcp.stream == 35
+677  12.456770 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45667 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 41
+678  12.456778 192.168.42.196 -> 65.55.186.235 TCP 54 45667 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 41
+679  12.458940 192.168.42.196 -> 65.55.186.235 HTTP 515 GET /en-us/Images/Products/news_tile_320.jpg HTTP/1.1   tcp.stream == 41
+680  12.474702 192.168.42.196 -> 66.150.117.33 TCP 54 51669 > http [FIN, ACK] Seq=973 Ack=1023 Win=16768 Len=0  tcp.stream == 27
+681  12.480682 192.168.42.196 -> 66.150.117.33 TCP 74 51686 > http [SYN] Seq=0 Win=14600 Len=0 MSS=1460 SACK_PERM=1 TSval=43490111 TSecr=0 WS=128  tcp.stream == 44
+682  12.486975 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45663 [ACK] Seq=1138 Ack=451 Win=200000 Len=0  tcp.stream == 37
+683  12.486994 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45663 [FIN, ACK] Seq=1138 Ack=451 Win=200000 Len=0  tcp.stream == 37
+684  12.487001 192.168.42.196 -> 65.55.186.235 TCP 54 45663 > http [ACK] Seq=451 Ack=1139 Win=16896 Len=0  tcp.stream == 37
+685  12.496601 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45668 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 42
+686  12.496629 192.168.42.196 -> 65.55.186.235 TCP 54 45668 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 42
+687  12.498837 192.168.42.196 -> 65.55.186.235 HTTP 519 GET /en-us/Images/Products/showcase_tile_320.jpg HTTP/1.1   tcp.stream == 42
+688  12.517362 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 39
+689  12.517383 192.168.42.196 -> 65.55.186.235 TCP 54 45665 > http [ACK] Seq=452 Ack=1261 Win=17152 Len=0  tcp.stream == 39
+690  12.517391 65.55.186.235 -> 192.168.42.196 HTTP 230 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 39
+691  12.517394 192.168.42.196 -> 65.55.186.235 TCP 54 45665 > http [ACK] Seq=452 Ack=1437 Win=19712 Len=0  tcp.stream == 39
+692  12.517396 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45662 [ACK] Seq=1629 Ack=456 Win=200000 Len=0  tcp.stream == 36
+693  12.517404 65.55.186.235 -> 192.168.42.196 TCP 66 http > 45669 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 43
+694  12.517410 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 43
+695  12.517413 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45662 [FIN, ACK] Seq=1629 Ack=456 Win=200000 Len=0  tcp.stream == 36
+696  12.517417 192.168.42.196 -> 65.55.186.235 TCP 54 45662 > http [ACK] Seq=456 Ack=1630 Win=19712 Len=0  tcp.stream == 36
+697  12.517423 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45666 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 40
+698  12.522894 192.168.42.196 -> 65.55.186.235 HTTP 500 GET /Images/fonts/SegoeWP.ttf HTTP/1.1   tcp.stream == 43
+699  12.525765 192.168.42.196 -> 65.55.186.235 TCP 54 45665 > http [FIN, ACK] Seq=452 Ack=1437 Win=19712 Len=0  tcp.stream == 39
+700  12.546479 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45664 [ACK] Seq=1221 Ack=456 Win=200000 Len=0  tcp.stream == 38
+701  12.546501 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45664 [FIN, ACK] Seq=1221 Ack=456 Win=200000 Len=0  tcp.stream == 38
+702  12.546509 192.168.42.196 -> 65.55.186.235 TCP 54 45664 > http [ACK] Seq=456 Ack=1222 Win=17152 Len=0  tcp.stream == 38
+703  12.586606 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45667 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 41
+704  12.586621 66.150.117.33 -> 192.168.42.196 TCP 54 http > 51669 [ACK] Seq=1023 Ack=974 Win=200000 Len=0  tcp.stream == 27
+705  12.586626 66.150.117.33 -> 192.168.42.196 TCP 54 http > 51669 [FIN, ACK] Seq=1023 Ack=974 Win=200000 Len=0  tcp.stream == 27
+706  12.586633 192.168.42.196 -> 66.150.117.33 TCP 54 51669 > http [ACK] Seq=974 Ack=1024 Win=16768 Len=0  tcp.stream == 27
+707  12.596601 66.150.117.33 -> 192.168.42.196 TCP 66 http > 51686 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1260 WS=4 SACK_PERM=1  tcp.stream == 44
+708  12.596629 192.168.42.196 -> 66.150.117.33 TCP 54 51686 > http [ACK] Seq=1 Ack=1 Win=14720 Len=0  tcp.stream == 44
+709  12.599893 192.168.42.196 -> 66.150.117.33 HTTP 1186 GET /dcs3k3lty00000oa4hws4uybu_3c3o/dcs.gif?dcsredirect=126&dcstlh=0&dcstlv=0&dcsdat=120216173807&dcssip=m.microsoft.com&dcsuri=%2Fen-us%2Fdefault.mspx&dcscfg=&dcsref=none&dcsqry=none&sid=ylSLuMdh3UOblcNCTdgvsw&dm=Android+4.x&mo=T-Mobile&c=US&df=Generic&dg=hi&sc=1&sj=0&os=Android&ov=4.x&x=320&y=640&ml=xhtml&sm=0&scc=1&sv=1&se=1&ss=1&wt.ti=Microsoft+Home&nvr=New&wt.es=android&wt.mpe=mHP-views&wt.mpvf=10104&wt.mpoem=Unknown&wt.mpmo=Unknown&wt.mpivcr=1&wt.ua=Mozilla%2F5.0+(Linux%3B+U%3B+Android+4.0.2%3B+en-us%3B+google_sdk+Build%2FICS_MR0)+AppleWebKit%2F534.30+(KHTML,+like+Gecko)+Version%2F4.0+Mobile+Safari%2F534.30&wt.mpjsr=1 HTTP/1.1   tcp.stream == 44
+710  12.606972 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45668 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 42
+711  12.626847 65.55.186.235 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 45669 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 43
+712  12.638102 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45665 [ACK] Seq=1437 Ack=453 Win=200000 Len=0  tcp.stream == 39
+713  12.638122 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45665 [FIN, ACK] Seq=1437 Ack=453 Win=200000 Len=0  tcp.stream == 39
+714  12.638130 192.168.42.196 -> 65.55.186.235 TCP 54 45665 > http [ACK] Seq=453 Ack=1438 Win=19712 Len=0  tcp.stream == 39
+715  12.656603 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45666 [ACK] Seq=1 Ack=459 Win=200000 Len=0  tcp.stream == 40
+716  12.706605 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45667 [ACK] Seq=1 Ack=462 Win=200000 Len=0  tcp.stream == 41
+717  12.706618 66.150.117.33 -> 192.168.42.196 TCP 54 [TCP Window Update] http > 51686 [ACK] Seq=1 Ack=1 Win=200000 Len=0  tcp.stream == 44
+718  12.757976 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45668 [ACK] Seq=1 Ack=466 Win=200000 Len=0  tcp.stream == 42
+719  12.757994 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45669 [ACK] Seq=1 Ack=447 Win=200000 Len=0  tcp.stream == 43
+720  12.766843 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 40
+721  12.766862 192.168.42.196 -> 65.55.186.235 TCP 54 45666 > http [ACK] Seq=459 Ack=1261 Win=17152 Len=0  tcp.stream == 40
+722  12.766879 65.55.186.235 -> 192.168.42.196 HTTP 101 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 40
+723  12.766887 192.168.42.196 -> 65.55.186.235 TCP 54 45666 > http [ACK] Seq=459 Ack=1308 Win=17152 Len=0  tcp.stream == 40
+724  12.771381 192.168.42.196 -> 65.55.186.235 TCP 54 45666 > http [FIN, ACK] Seq=459 Ack=1308 Win=17152 Len=0  tcp.stream == 40
+725  12.796842 66.150.117.33 -> 192.168.42.196 HTTP 576 HTTP/1.1 200 OK  (GIF89a)  tcp.stream == 44
+726  12.796866 192.168.42.196 -> 66.150.117.33 TCP 54 51686 > http [ACK] Seq=1133 Ack=523 Win=15744 Len=0  tcp.stream == 44
+727  12.802828 192.168.42.196 -> 66.150.117.33 TCP 54 51686 > http [FIN, ACK] Seq=1133 Ack=523 Win=15744 Len=0  tcp.stream == 44
+728  12.847968 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 41
+729  12.847988 192.168.42.196 -> 65.55.186.235 TCP 54 45667 > http [ACK] Seq=462 Ack=1261 Win=17152 Len=0  tcp.stream == 41
+730  12.847995 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 41
+731  12.847998 192.168.42.196 -> 65.55.186.235 TCP 54 45667 > http [ACK] Seq=462 Ack=2521 Win=19712 Len=0  tcp.stream == 41
+732  12.857844 65.55.186.235 -> 192.168.42.196 HTTP 819 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 41
+733  12.857864 192.168.42.196 -> 65.55.186.235 TCP 54 45667 > http [ACK] Seq=462 Ack=3286 Win=22272 Len=0  tcp.stream == 41
+734  12.857871 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 42
+735  12.857874 192.168.42.196 -> 65.55.186.235 TCP 54 45668 > http [ACK] Seq=466 Ack=1261 Win=17152 Len=0  tcp.stream == 42
+736  12.862102 192.168.42.196 -> 65.55.186.235 TCP 54 45667 > http [FIN, ACK] Seq=462 Ack=3286 Win=22272 Len=0  tcp.stream == 41
+737  12.868726 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 42
+738  12.868747 192.168.42.196 -> 65.55.186.235 TCP 54 45668 > http [ACK] Seq=466 Ack=2521 Win=19712 Len=0  tcp.stream == 42
+739  12.868754 65.55.186.235 -> 192.168.42.196 HTTP 1054 HTTP/1.1 200 OK  (JPEG JFIF image)  tcp.stream == 42
+740  12.868757 192.168.42.196 -> 65.55.186.235 TCP 54 45668 > http [ACK] Seq=466 Ack=3521 Win=22272 Len=0  tcp.stream == 42
+741  12.870184 192.168.42.196 -> 65.55.186.235 TCP 54 45668 > http [FIN, ACK] Seq=466 Ack=3521 Win=22272 Len=0  tcp.stream == 42
+742  12.888596 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45666 [ACK] Seq=1308 Ack=460 Win=200000 Len=0  tcp.stream == 40
+743  12.888616 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45666 [FIN, ACK] Seq=1308 Ack=460 Win=200000 Len=0  tcp.stream == 40
+744  12.888624 192.168.42.196 -> 65.55.186.235 TCP 54 45666 > http [ACK] Seq=460 Ack=1309 Win=17152 Len=0  tcp.stream == 40
+745  12.919093 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+746  12.919113 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=1261 Win=17152 Len=0  tcp.stream == 43
+747  12.919204 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+748  12.919209 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=2521 Win=19712 Len=0  tcp.stream == 43
+749  12.927217 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+750  12.927238 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=3781 Win=22272 Len=0  tcp.stream == 43
+751  12.936964 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+752  12.936985 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=5041 Win=24704 Len=0  tcp.stream == 43
+753  12.946962 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+754  12.946981 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=6301 Win=27264 Len=0  tcp.stream == 43
+755  12.967965 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+756  12.967986 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=7561 Win=29824 Len=0  tcp.stream == 43
+757  12.968079 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+758  12.968085 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=8821 Win=32256 Len=0  tcp.stream == 43
+759  12.968089 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+760  12.968093 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=10081 Win=34816 Len=0  tcp.stream == 43
+761  12.979216 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+762  12.979237 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=11341 Win=37376 Len=0  tcp.stream == 43
+763  12.979245 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+764  12.979247 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=12601 Win=39808 Len=0  tcp.stream == 43
+765  12.987223 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+766  12.987244 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=13861 Win=42368 Len=0  tcp.stream == 43
+767  12.987251 66.150.117.33 -> 192.168.42.196 TCP 54 http > 51686 [ACK] Seq=523 Ack=1134 Win=200000 Len=0  tcp.stream == 44
+768  12.987258 66.150.117.33 -> 192.168.42.196 TCP 54 http > 51686 [FIN, ACK] Seq=523 Ack=1134 Win=200000 Len=0  tcp.stream == 44
+769  12.987261 192.168.42.196 -> 66.150.117.33 TCP 54 51686 > http [ACK] Seq=1134 Ack=524 Win=15744 Len=0  tcp.stream == 44
+770  12.987268 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45667 [ACK] Seq=3286 Ack=463 Win=200000 Len=0  tcp.stream == 41
+771  12.987271 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45667 [FIN, ACK] Seq=3286 Ack=463 Win=200000 Len=0  tcp.stream == 41
+772  12.987273 192.168.42.196 -> 65.55.186.235 TCP 54 45667 > http [ACK] Seq=463 Ack=3287 Win=22272 Len=0  tcp.stream == 41
+773  12.987329 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45668 [ACK] Seq=3521 Ack=467 Win=200000 Len=0  tcp.stream == 42
+774  12.987334 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45668 [FIN, ACK] Seq=3521 Ack=467 Win=200000 Len=0  tcp.stream == 42
+775  12.987337 192.168.42.196 -> 65.55.186.235 TCP 54 45668 > http [ACK] Seq=467 Ack=3522 Win=22272 Len=0  tcp.stream == 42
+776  13.037834 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+777  13.037853 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=15121 Win=44928 Len=0  tcp.stream == 43
+778  13.046967 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+779  13.046988 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=16381 Win=47360 Len=0  tcp.stream == 43
+780  13.058093 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+781  13.058113 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=17641 Win=49920 Len=0  tcp.stream == 43
+782  13.067089 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+783  13.067110 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=18901 Win=52480 Len=0  tcp.stream == 43
+784  13.067201 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+785  13.067206 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=20161 Win=55040 Len=0  tcp.stream == 43
+786  13.088093 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+787  13.088113 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=21421 Win=57472 Len=0  tcp.stream == 43
+788  13.088121 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+789  13.088123 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=22681 Win=60032 Len=0  tcp.stream == 43
+790  13.088201 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+791  13.088206 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=23941 Win=61568 Len=0  tcp.stream == 43
+792  13.107214 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+793  13.107234 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=25201 Win=64128 Len=0  tcp.stream == 43
+794  13.107241 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+795  13.107243 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=26461 Win=62976 Len=0  tcp.stream == 43
+796  13.128089 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+797  13.128109 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=27721 Win=64128 Len=0  tcp.stream == 43
+798  13.138708 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+799  13.138725 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=28981 Win=64128 Len=0  tcp.stream == 43
+800  13.138830 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+801  13.138835 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=30241 Win=62976 Len=0  tcp.stream == 43
+802  13.138839 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+803  13.138841 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+804  13.138952 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+805  13.140468 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=34021 Win=64128 Len=0  tcp.stream == 43
+806  13.148216 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+807  13.148232 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+808  13.148453 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=36541 Win=62976 Len=0  tcp.stream == 43
+809  13.159836 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+810  13.159950 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+811  13.159961 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=39061 Win=62976 Len=0  tcp.stream == 43
+812  13.159968 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+813  13.168589 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+814  13.168608 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=41581 Win=64128 Len=0  tcp.stream == 43
+815  13.168615 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+816  13.168700 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+817  13.169442 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=44101 Win=64128 Len=0  tcp.stream == 43
+818  13.178346 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+819  13.178362 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+820  13.178364 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+821  13.178430 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=47881 Win=64128 Len=0  tcp.stream == 43
+822  13.187215 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+823  13.187325 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+824  13.187330 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+825  13.187415 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=51661 Win=64128 Len=0  tcp.stream == 43
+826  13.207963 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+827  13.229719 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+828  13.229739 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=54181 Win=64128 Len=0  tcp.stream == 43
+829  13.229746 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+830  13.229828 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+831  13.229833 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+832  13.229835 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+833  13.229949 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+834  13.230077 65.55.186.235 -> 192.168.42.196 TCP 1314 [TCP segment of a reassembled PDU]  tcp.stream == 43
+835  13.230084 65.55.186.235 -> 192.168.42.196 HTTP/DL 1095 Connect  tcp.stream == 43
+836  13.231383 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=447 Ack=62782 Win=62976 Len=0  tcp.stream == 43
+837  13.235118 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [FIN, ACK] Seq=447 Ack=62782 Win=64128 Len=0  tcp.stream == 43
+838  13.346726 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45669 [ACK] Seq=62782 Ack=448 Win=200000 Len=0  tcp.stream == 43
+839  13.346745 65.55.186.235 -> 192.168.42.196 TCP 54 http > 45669 [FIN, ACK] Seq=62782 Ack=448 Win=200000 Len=0  tcp.stream == 43
+840  13.346751 192.168.42.196 -> 65.55.186.235 TCP 54 45669 > http [ACK] Seq=448 Ack=62783 Win=64128 Len=0  tcp.stream == 43
